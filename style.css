@@ -1,0 +1,17 @@
+td {
+	height: 20px;
+	width: 20px;
+}
+.active-red {
+	background: red;
+	background-size: 100%;
+}
+.active-green {
+	background: green;
+	background-size: 100%;
+}
+td input {
+	width: 52px;
+	height: 50px;
+	cursor: pointer;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Tic-Toc-Toe</title>
+      <meta name="description" content="Tic-Toc-Toe Game">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <div class="main">
+         <div class="form-section">
+            Player1 <input type="text" id="player1"></br>
+            Player2 <input type="text" id="player2"></br>
+            <input type="submit" id="start" onclick="startGame()" value="Start Game">
+         </div>
+         <h2 id="turn"></h2>
+         <table id="main-table" style="display:none">
+            <tr class="row1">
+               <td class="tdata"><input type="text" id="1" onclick="clicked('1')"></td>
+               <td class="tdata"><input type="text" id="2" onclick="clicked('2')"></td>
+               <td class="tdata"><input type="text" id="3" onclick="clicked('3')"></td>
+            </tr>
+            <tr class="row2">
+               <td class="tdata"><input type="text" id="4" onclick="clicked('4')"></td>
+               <td class="tdata"><input type="text" id="5" onclick="clicked('5')"></td>
+               <td class="tdata"><input type="text" id="6" onclick="clicked('6')"></td>
+            </tr>
+            <tr class="row3">
+               <td class="tdata"><input type="text" id="7" onclick="clicked('7')"></td>
+               <td class="tdata"><input type="text" id="8" onclick="clicked('8')"></td>
+               <td class="tdata"><input type="text" id="9" onclick="clicked('9')"></td>
+            </tr>
+            <tr>
+               <td>
+                  <span id="player1-name"></span>
+                  <div id="player2-count">0</div>
+               </td>
+               <td>
+                  <span id="player2-name"></span>
+                  <div id="player1-count">0</div>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="submit" onclick="newGame()" value="clear"></td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>
